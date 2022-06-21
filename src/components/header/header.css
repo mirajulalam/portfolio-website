@@ -54,3 +54,20 @@ transform: rotate(90deg);
 font-weight: 300;
 font-size: 0.9;
 }
+
+/*********** Media Queryes (midium devices)************/
+@media screen and(max-width:1024px) {
+    header{
+        height: 68vh;
+    }
+}
+/*********** Media Queryes (Small devices)************/
+@media screen and(max-width:600px) {
+    header{
+        height: 100vh;
+    }
+    .header_socials,
+    .scroll_down{
+        display: none;
+    }
+}
