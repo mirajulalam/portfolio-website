@@ -42,7 +42,6 @@
 /*********** Media Queryes (midium devices)************/
 @media screen and(max-width:1024px) {
     .experience_container{
-        display: grid;
         grid-template-columns: 1fr;
     }
     .experience_container > div{
