@@ -91,12 +91,16 @@
 } */
 
 @media only screen and (max-width:576px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
     .about_me{
         width: 65%;
         margin: 0 auto 3rem;
     }
     .about_cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     .about_content{
