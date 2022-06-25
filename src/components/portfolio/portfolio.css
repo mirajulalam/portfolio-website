@@ -30,16 +30,30 @@
 }
 
 /*********** Media Queryes (midium devices)************/
-@media screen and(max-width:1024px) {
+/* @media screen and(max-width:1024px) {
     .portfolio_container{
         grid-template-columns: repeat(2,1fr);
         gap: 1.2rem;
     }
- }
+ } */
  /*********** Media Queryes (Small devices)************/
- @media screen and(max-width:600px) {
+ /* @media screen and(max-width:600px) {
         .portfolio_container{
             grid-template-columns: 1fr;
             gap: 1rem;
         }
- }
+ } */
+
+ @media only screen and (max-width:576px) {
+    .portfolio_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .portfolio_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}
