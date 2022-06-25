@@ -39,7 +39,7 @@
  /*********** Media Queryes (Small devices)************/
  @media screen and(max-width:600px) {
         .portfolio_container{
-            grid-template-columns: repeat(1);
+            grid-template-columns: 1fr;
             gap: 1rem;
         }
  }

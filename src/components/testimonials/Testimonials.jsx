@@ -1,8 +1,8 @@
 import React from 'react'
 import './testimonials.css';
-import AVATAR1 from '../../assets/review2.jfif'
+import AVATAR1 from '../../assets/review1.jpg'
 import AVATAR2 from '../../assets/review2.jfif';
-import AVATAR3 from '../../assets/review3.jfif';
+import AVATAR3 from '../../assets/review3.jpg';
 
 // import Swiper core and required modules
 import {  Pagination } from 'swiper';
@@ -27,12 +27,12 @@ const Testimonials = () => {
     {
         name: 'Harry',
         review: "After I submitted a low rating due to a shipping delay & faulty part Rose gave me a call within a few hours of submitting my rating & worked diligently to get things straightened out. Originally I had written I wouldn't buy from them again, but seeing how great their customer service is its reassuring to know that if you have an issue they will ensure to fix your issue",
-        avatar: AVATAR1
+        avatar: AVATAR2
     },
     {
         name: 'Jennifer',
         review: "I made contact with customer service an they were extremely helpful to get my issue resolved. I explain to them that it was very dented probably from shipping an they are currently shipping me another one free to me. I am very surprised how this company handles their customers an are not all about a dollar. Definitely will be buying more parts. ",
-        avatar: AVATAR1
+        avatar: AVATAR3
     },
 ]
 
