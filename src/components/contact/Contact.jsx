@@ -1,8 +1,7 @@
-import React from 'react'
+import React,{ useRef } from 'react'
 import './contact.css';
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri';
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
@@ -14,7 +13,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_jkidp1c', 'template_86gvfvq', form.current, 'bC3daaJCpTsOQkKTT')
-     e.target.reset();
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
   };
   return (
     <section id='contact'>
@@ -37,7 +41,7 @@ const Contact = () => {
           </article>
         </div>
         {/* end of contact options */}
-        <form ref={form} onSummin={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder='Your Full Name' required/>
           <input type="email" name="email" placeholder='Your Email' required/>
           <textarea name="message"  rows="7" placeholder='Your Message' required></textarea>
