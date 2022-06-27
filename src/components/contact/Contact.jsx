@@ -3,6 +3,7 @@ import './contact.css';
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 
 const Contact = () => {
@@ -15,6 +16,7 @@ const Contact = () => {
     emailjs.sendForm('service_jkidp1c', 'template_86gvfvq', form.current, 'bC3daaJCpTsOQkKTT')
       .then((result) => {
           console.log(result.text);
+          swal("Successfully", "Thanks for your message", "success");
           e.target.reset();
       }, (error) => {
           console.log(error.text);
