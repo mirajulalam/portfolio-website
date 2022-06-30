@@ -5,9 +5,7 @@ import {RiMessengerLine} from 'react-icons/ri';
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 
-
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +24,6 @@ const Contact = () => {
     <section id='contact'>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
-
       <div className="container contact_container">
         <div className="contact_options">
           <article className='contact_option'>
